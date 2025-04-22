@@ -1,0 +1,9 @@
+lang: ja
+theme: themes/index.css
+themeSet: ./themes
+size: 16:9
+author: "TM3"
+engine: engine.mjs
+#inputDir: ./src
+#output: ./dist
+allowLocalFiles: true

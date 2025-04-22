@@ -1,0 +1,14 @@
+{
+    "markdown.marp.themes": [
+      "themes/index.css",
+    //   "themes/global.css",
+    //   "themes/utility.css"
+    ],
+    "markdown.marp.html": "default",
+    "command-runner.commands": {
+        // "marp-pdf": "npx marp --allow-local-files --pdf --theme ${workspaceFolder}/themes/index.css --output ${fileDirname}/${fileBasenameNoExtension}.pdf -- ${file}",
+        "marp-output": "npx marp --allow-local-files --html --theme ${workspaceFolder}/themes/index.css --output ${fileDirname}/${fileBasenameNoExtension}.html -- ${file} && sleep 1 && chromium --headless --no-pdf-header-footer --no-sandbox --print-to-pdf=${fileDirname}/${fileBasenameNoExtension}.pdf ${fileDirname}/${fileBasenameNoExtension}.html"
+    }
+}
+  
+  
